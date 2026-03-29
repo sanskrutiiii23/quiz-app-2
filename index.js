@@ -49,6 +49,9 @@ let questions = [
 
 ];
 
+questions = questions.sort(function() {
+  return Math.random() - 0.5;
+});
 
 let currentQuestion = 0;
 let score = 0;
@@ -166,6 +169,3 @@ function showResults() {
     </button>
   `;
 }
-
-
-
